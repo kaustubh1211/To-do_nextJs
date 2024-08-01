@@ -1,15 +1,12 @@
-"use client"
+
 import { useState } from "react";
+import ToDO from "./Component/ToDO";
 export default function Home() {
-  const [name ,setName]=useState();
+
   return (
-   <div className="flex-col justify-center items-center">
-
-    <h1 className=" font-semibold  text-center  text-4xl ">Todo - app </h1>
-    <form action=" " className="text-center">
-       <input type="text"  placeholder="Write your data"/>
-
-    </form>
-   </div>
+  <><main>
+    <h1 className="text-center font-sans text-3xl ">   To-do App</h1>
+    <ToDO/>
+    </main></>
   );
 }
